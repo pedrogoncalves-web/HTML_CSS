@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.conteiner{
+    border: 3px solid blue;
+    margin: 8px;
+    gap: 8px;
+    
+    display: grid;
+    /*grid-template-columns: 80px 80px 80px; distribui os elementos em 3 colunas de 80px */ 
+    /*grid-template-columns: 1fr 1fr 1fr; distribui os elementos em tamanhos iguais entre as colunas 1fração*/
+    /*grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr); passa o valor minimo e maximo de cada coluna*/
+    
+   /* grid-template-columns:repeat(4, minmax(0px, 1fr)); mantem 4 coluna com 1fr*/
+   /*grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)) ;*/
+   /*grid-template-rows: auto 200px 300px;*/
+   /*grid-auto-rows: 100px;*/
+   grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    
+}
+@media screen and (max-width: 520px){
+    .conteiner{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.item{
+    background-color: gray;
+}

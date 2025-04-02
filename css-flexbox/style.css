@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 450px;
+    height: 450px;
+    border: 2px solid red;
+
+    display: flex;
+    flex-direction: row;
+    /*align-items: flex-start;*/
+    justify-content: space-around;/* alianhamento dos elemento na coluna/* 
+    /*flex-wrap: wrap; quebra de linha dos elementos*/
+}
+.box{
+    background-color: gold;
+    border: 1px solid gray;
+    width: 60px;
+    height: 60px;
+
+    /*flex-basis: 120px;*/
+    flex:1 2 120px ; 
+}
+#item1{
+    flex-grow: 1;
+    /*align-self: flex-end; alinha apenas 1 elemento*/
+    
+}
+#item2{
+   flex-grow: 2;
+
+
+}
